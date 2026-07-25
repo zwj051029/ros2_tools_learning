@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="turtlesim" exec="turtlesim_node">
+        <param from="$(find-pkg-share learning_launch_cpp)/config/turtlesim.yaml"/>
+    </node>
+</launch>
