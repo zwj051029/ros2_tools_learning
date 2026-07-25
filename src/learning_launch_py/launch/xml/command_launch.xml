@@ -1,0 +1,14 @@
+<launch>
+    <node pkg="turtlesim" exec="turtlesim_node"/>
+
+    <executable
+        cmd="ros2 service call /spawn turtlesim/srv/Spawn &quot;{x: 6.0, y: 6.0, theta: 3.14, name: 'my_turtle'}&quot;"
+        output="both"
+        shell="true"
+    />
+    <executable
+        cmd="ros2 topic echo /turtle1/pose"
+        output="both"
+        shell="true"
+    />
+</launch>

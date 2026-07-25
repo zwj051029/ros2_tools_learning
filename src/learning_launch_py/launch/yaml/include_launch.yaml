@@ -1,0 +1,3 @@
+launch:
+- include:
+    file: $(find-pkg-share learning_launch_py)/launch/yaml/parameters_launch.yaml
