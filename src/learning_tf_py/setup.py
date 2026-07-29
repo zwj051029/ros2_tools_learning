@@ -27,6 +27,7 @@ setup(
             'static_tf_broadcaster = learning_tf_py.static_tf_broadcaster:main',
             'dynamic_tf_broadcaster = learning_tf_py.dynamic_tf_broadcaster:main',
             'point_publisher = learning_tf_py.point_publisher:main',
+            'tf_listener = learning_tf_py.tf_listener:main',
         ],
     },
 )
