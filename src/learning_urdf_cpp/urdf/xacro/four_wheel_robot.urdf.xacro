@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<robot name="four_wheel_sensor_robot" xmlns:xacro="http://wiki.ros.org/xacro">
+    <xacro:include filename="four_wheel_robot_base.urdf.xacro"/>
+    <xacro:include filename="four_wheel_robot_camera.urdf.xacro"/>
+    <xacro:include filename="four_wheel_robot_lidar.urdf.xacro"/>
+</robot>

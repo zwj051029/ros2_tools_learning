@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+    <xacro:property name="lidar_radius" value="0.03"/>
+    <xacro:property name="lidar_height" value="0.03"/>
+    <xacro:property name="lidar_z" value="${base_height / 2 + lidar_height / 2}"/>
+
+    <link name="lidar_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${lidar_radius}" length="${lidar_height}"/>
+            </geometry>
+            <material name="lidar_blue"/>
+        </visual>
+    </link>
+
+    <joint name="lidar_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="lidar_link"/>
+        <origin xyz="0.0 0.0 ${lidar_z}" rpy="0.0 0.0 0.0"/>
+    </joint>
+</robot>
